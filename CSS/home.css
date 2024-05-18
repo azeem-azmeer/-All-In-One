@@ -1,0 +1,222 @@
+ 
+ /*home page begins here*/
+ /*  home cover page image style*/
+ .home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../Image/26755.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 17rem;
+  padding-bottom: 10rem;
+}
+  .home .content {
+    text-align: center;
+    width: 60rem;
+  }
+  
+  .home .content h3 {
+    color: black;
+    font-size: 5.5rem;
+  }
+  
+  .home .content h3 span {
+    color: green;
+  }
+  
+  .home .content p {
+    color: var(--light-color);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.8rem;
+  }
+  /*  home cover page style ends*/
+  /* features section  starts here*/
+  .features .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for desktop */
+    gap: 1rem;
+  }
+  .features .box-container .box {
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+  }
+
+  .features .box-container .box:hover {
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+  }
+
+  .features .box-container .box img {
+    margin: 1rem 0;
+    height: 15rem;
+  }
+
+  .features .box-container .box h3 {
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--black);
+  }
+
+  .features .box-container .box p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--light-color);
+    padding: 1rem 0;
+  }
+  /*type of products styling*/
+  .container1 {
+    width: 1035px; 
+    margin: 0 auto;
+    padding: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    display: flex; 
+  }
+  
+  .image-container {
+    flex: 6;
+    margin-right: 20px; 
+  }
+  
+  .text-container {
+    flex: 9 ;
+    color: var(--light-color);
+    font-size: 1.5rem;
+  }
+  .text-container h2{
+    color: black;
+    font-size: 2.8rem;
+  }
+  ol {
+    margin-left: 15px;
+  }
+  img {
+    max-width: 100%; /* To Ensure the image doesn't exceed its container */
+  }
+/* features section  ends here*/
+/* discount section  starts here*/
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 3.5rem;
+    color: #333;
+ }
+ .center-container {
+  text-align: center;
+}
+
+.dis-heading {
+  margin-top: 20px;
+  font-size: 3.5rem;
+  background: rgb(198, 14, 14);
+  color: #fff;
+  display: inline-block;
+  padding: 0.5rem 3rem;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+ .discounts {
+    margin-top: -10px;
+    text-align: center;
+    display: flex;
+    gap: 1.0rem;
+ }
+ .dis-category {
+  width: 40%;
+  margin-top: 10px; ;
+  margin-bottom: 20px;
+  padding: 4rem 2rem;
+  background: #fff;
+  outline: var(--outline);
+  outline-offset: -1rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.dis-category:hover {
+  outline: var(--outline-hover);
+  outline-offset: 0rem;
+}
+
+.dis-category .product .discount {
+  color: red;
+  font-weight: bold;
+}
+
+.dis-category h2 {
+  font-size: 2.5rem;
+  color: black;
+}
+
+.product {
+  font-size: 1.8rem;
+  color: var(--light-color);
+  margin-bottom: 10px;
+}
+
+/* Styles for the list */
+  .dis-category ul {
+    padding: 0 50px; 
+    margin: 0,; 
+  }
+
+.dis-category ul li {
+  margin-bottom: 10px;
+}
+
+ .category-discount{
+  margin-right: 20px;
+ }
+  /* discount section  ends here*/
+  /* Media Queries */
+@media (max-width: 890px) {
+ .features .box-container {
+  grid-template-columns: repeat(1, 1fr);
+}
+.container1 {
+  flex-direction: column; /*  items vertically */
+  width: 90%;
+ margin: auto;
+}
+
+.container1 .image-container {
+  width: 90%;
+  margin-left: 20px;
+}
+.container1 .text-container h2 {
+  font-size: 2rem;
+  margin-top: 10px; 
+  text-align: center;
+}
+.container1.text-container {
+  flex: 1; /*  full width of the container */
+  margin-right: 0; 
+  font-size: 1.5rem; 
+}
+.dis-category {
+  margin-left:-20px;
+  margin-right: 20px;
+  font-size: auto;
+  width: 100%;
+}
+.dis-category h2{
+  padding-top: 10px;
+  font-size: 1.5rem;
+}
+.dis-category ,.product{
+  font-size: 1.2rem;
+}
+.dis-category,.btn{
+  font-size: 12px; 
+  padding: 5px 10px;
+}
+.dis-category ul {
+  padding: 0 30px; 
+  margin: 0; 
+}
+}
